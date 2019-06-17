@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Mukhammadjavokhirbek Suratov](https://up.htmlacademy.ru/htmlcss/25/user/885383).
-* Наставник: `Неизвестно`.
+* Наставник: [Владислав Кривокора](https://htmlacademy.ru/profile/krivokora).
 
 ---
 
