@@ -7,76 +7,80 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <header class="site-header">
-      <nav class="site-navigation">
-        <a href="" class="logo">
-          <img src="img/logo.svg" alt="Логотип Глейси" width="154" height="64">
-        </a>
-        <ul class="main-navigation">
-          <li class="main-navigation__item">
-            <a href="#" class="main-navigation__link">Каталог</a>
-            <div class="main-navigation__submenu submenu">
-              <ul class="submenu__list featured">
-                <li class="submenu__item">
-                  <a class="submenu__link" href="#">Новинки</a>
-                </li>
-              </ul><!-- /.featured -->
-              <hr>
-              <ul class="submenu__list">
-                <li class="submenu__item">
-                  <a class="submenu__link" href="#">Сливочное</a>
-                </li>
-                <li class="submenu__item">
-                  <a class="submenu__link" href="#">Щербеты</a>
-                </li>
-                <li class="submenu__item">
-                  <a class="submenu__link" href="#">Фруктовый лед</a>
-                </li>
-                <li class="submenu__item">
-                  <a class="submenu__link" href="#">Мелорин</a>
-                </li>
-              </ul>
-            </div><!-- /.main-navigation__submenu -->
-          </li>
-          <li class="main-navigation__item"><a href="#">Доставка и оплата</a></li>
-          <li class="main-navigation__item"><a href="#">О Компании</a></li>
-        </ul><!-- /.main-navigation -->
-
-        <ul class="user-navigation">
-          <li class="user-navigation__item user-navigation__item--search">
-            <a href="#">
-              <img src="img/loupe.svg" alt="">
-              <div class="search-form-wrapper">
-                <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
-                  <label for="search-input" class="visually-hidden">Что ищем?</label>
-                  <input type="search" name="search" id="search-input" placeholder="Что ищем?" required>
-                </form><!-- /.search-form -->
-              </div><!-- /.search-form-wrapper -->
+    <div class="site-wrapper">
+      <div class="container">
+        <header class="site-header">
+          <nav class="site-navigation">
+            <a href="" class="logo">
+              <img src="img/logo.svg" alt="Логотип Глейси" width="154" height="64">
             </a>
-          </li>
-          <li class="user-navigation__item user-navigation__item--login">
-            <a href="#">Вход</a>
-            <div class="login-form-wrapper">
-              <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
-                <label for="login-email-input" class="visually-hidden">Электронная почта</label>
-                <input type="email" name="email" id="login-email-input" placeholder="Электронная почта" required>
-                <label for="login-password-input" class="visually-hidden">Пароль</label>
-                <input type="password" name="password" id="login-password-input" placeholder="Пароль" required>
-                <button class="button" type="submit">Войти</button>
-                <a href="password-reset.html">Забыли пароль?</a>
-                <a href="registration.html">Новая регистрация</a>
-              </form>
-            </div><!-- /.login-form-wrapper -->
-          </li>
-          <li class="user-navigation__item user-navigation__item--cart">
-            <a href="#">Пусто</a>
-          </li>
-        </ul><!-- /.user-navigation -->
-      </nav><!-- /.site-navigation -->
-      <div class="site-header__contacts">
-        <p>С 10 до 20, ежедневно</p>
-        <a href="tel:+88124502525">8 812 450-25-25</a>
-      </div><!-- /.site-header__contacts -->
-    </header><!-- /.site-header -->
+            <ul class="main-navigation">
+              <li class="main-navigation__item">
+                <a href="#" class="main-navigation__link">Каталог</a>
+                <div class="main-navigation__submenu submenu">
+                  <ul class="submenu__list featured">
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="#">Новинки</a>
+                    </li>
+                  </ul><!-- /.featured -->
+                  <hr>
+                  <ul class="submenu__list">
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="#">Сливочное</a>
+                    </li>
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="#">Щербеты</a>
+                    </li>
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="#">Фруктовый лед</a>
+                    </li>
+                    <li class="submenu__item">
+                      <a class="submenu__link" href="#">Мелорин</a>
+                    </li>
+                  </ul>
+                </div><!-- /.main-navigation__submenu -->
+              </li>
+              <li class="main-navigation__item"><a href="#">Доставка и оплата</a></li>
+              <li class="main-navigation__item"><a href="#">О Компании</a></li>
+            </ul><!-- /.main-navigation -->
+
+            <ul class="user-navigation">
+              <li class="user-navigation__item user-navigation__item--search">
+                <a href="#">
+                  <img src="img/loupe.svg" alt="">
+                  <div class="search-form-wrapper">
+                    <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
+                      <label for="search-input" class="visually-hidden">Что ищем?</label>
+                      <input type="search" name="search" id="search-input" placeholder="Что ищем?" required>
+                    </form><!-- /.search-form -->
+                  </div><!-- /.search-form-wrapper -->
+                </a>
+              </li>
+              <li class="user-navigation__item user-navigation__item--login">
+                <a href="#">Вход</a>
+                <div class="login-form-wrapper">
+                  <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
+                    <label for="login-email-input" class="visually-hidden">Электронная почта</label>
+                    <input type="email" name="email" id="login-email-input" placeholder="Электронная почта" required>
+                    <label for="login-password-input" class="visually-hidden">Пароль</label>
+                    <input type="password" name="password" id="login-password-input" placeholder="Пароль" required>
+                    <button class="button" type="submit">Войти</button>
+                    <a href="password-reset.html">Забыли пароль?</a>
+                    <a href="registration.html">Новая регистрация</a>
+                  </form>
+                </div><!-- /.login-form-wrapper -->
+              </li>
+              <li class="user-navigation__item user-navigation__item--cart">
+                <a href="#">Пусто</a>
+              </li>
+            </ul><!-- /.user-navigation -->
+          </nav><!-- /.site-navigation -->
+          <div class="site-header__contacts">
+            <p>С 10 до 20, ежедневно</p>
+            <a href="tel:+88124502525">8 812 450-25-25</a>
+          </div><!-- /.site-header__contacts -->
+        </header><!-- /.site-header -->
+      </div><!-- /.container -->
+    </div><!-- /.site-wrapper -->
   </body>
 </html>
