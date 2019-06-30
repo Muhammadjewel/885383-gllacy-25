@@ -265,7 +265,7 @@ a:focus {
 }
 .user-navigation__item:hover path,
 .user-navigation__link:focus path,
-.user-navigation__link:hover circle,
+.user-navigation__item:hover circle,
 .user-navigation__link:focus circle {
   fill: #323232;
 }
@@ -316,8 +316,19 @@ a:focus {
   color: #323232;
   border-bottom-color: #323232;
 }
+/* User navigation cart */
 .user-navigation__item--cart svg {
   margin-right: 7px;
+}
+.user-navigation__item--cart.not-empty .user-navigation__link {
+  padding-left: 44px;
+  background-image: url('../img/basket-red.svg');
+  background-repeat: no-repeat;
+  background-size: 21px 20px;
+  background-position: 16px 7px;
+}
+.user-navigation__item--cart.not-empty svg {
+  display: none;
 }
 /* Site-header contacts */
 .site-header__contacts {
