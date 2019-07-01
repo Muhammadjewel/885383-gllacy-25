@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
+    <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+    <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+    <input class="visually-hidden" type="radio" id="product-3" name="toggle">
     <div class="site-wrapper">
       <div class="container">
         <header class="site-header">
@@ -85,7 +88,7 @@
                 <div class="site-navigation__dropdown cart-list-dropdown">
                   <ul class="cart__list">
                     <li class="cart__item">
-                      <button type="button" class="close-button"><span class="visually-hidden">Удалить</span></button>
+                      <button type="button" class="close-button">Удалить</button>
                       <img class="cart__item-img" src="img/orange.jpg" alt="Пломбир с апельсиновым джемом" width="33" height="33">
                       <strong class="cart__item-name">Пломбир с апельсиновым джемом</strong>
                       <span class="cart__item-calculation">1,5 кг х <span class="cart__item-price">200 руб.</span></span>
@@ -111,13 +114,43 @@
             <a class="phone" href="tel:+88124502525">8 812 450-25-25</a>
           </div><!-- /.site-header__contacts -->
         </header><!-- /.site-header -->
+
+        <!-- SLIDERS -->
+        <section class="slider">
+          <h2 class="visually-hidden">Лучшие мороженные</h2>
+          <div class="slider__controls">
+            <label for="product-1">Первый</label>
+            <label for="product-2">Второй</label>
+            <label for="product-3">Третий</label>
+          </div>
+          <ul class="slider__list">
+            <li class="slider__item slide" id="slide1">
+              <h3 class="slide__title">
+                Крем-брюле и пломбир с малиновым джемом
+              </h3>
+              <a class="button slide-button" href="#">Давайте оба!</a>
+            </li><!-- /.slider__item -->
+            <li class="slider__item slide" id="slide2">
+              <h3 class="slide__title">
+                Шоколадный пломбир и лимонный сорбет
+              </h3>
+              <a class="button slide-button" href="#">Давайте оба!</a>
+            </li>
+            <li class="slider__item slide" id="slide3">
+              <h3 class="slide__title">
+                Пломбир с помадкой и клубничный щербет
+              </h3>
+              <a class="button slide-button" href="#">Давайте оба!</a>
+            </li>
+          </ul><!-- /.slider__list -->
+        </section><!-- /.slider -->
       </div><!-- /.container -->
     </div><!-- /.site-wrapper -->
 
     <!-- MODALS -->
     <div class="modal__overlay">
       <section class="modal modal--contact">
-        <button class="close-button" type="button"><span class="visually-hidden">Закрыть форму</span></button>
+        <button class="close-button" type="button">Закрыть форму</button>
         <h2 class="visually-hidden">Форма обратной связи</h2>
         <p class="modal__title">Мы обязательно вам ответим!</p>
         <form action="https://echo.htmlacademy.ru" method="POST" class="modal__form">
