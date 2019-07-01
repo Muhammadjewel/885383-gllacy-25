@@ -110,7 +110,7 @@ a:focus {
 .button {
   display: inline-block;
   vertical-align: top;
-  padding: 10px 25px;
+  padding: 10px 23px;
   border: none;
   border-radius: 50px;
   background-color: #f26843;
@@ -462,6 +462,7 @@ a:focus {
 .slider {
   position: relative;
   padding-top: 274px;
+  margin-bottom: 41px;
   text-align: center;
   color: #fff;
 }
@@ -503,6 +504,42 @@ a:focus {
   font-size: 60px;
   line-height: 60px;
   font-weight: 700;
+}
+/* PROMO */
+.promo__list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.promo__item {
+  width: 560px;
+  padding: 17px 20px 23px;
+  border-radius: 15px;
+  background-color: #323232;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #fff;
+  text-align: right;
+}
+.promo__item--raspberry {
+  background-image: url('../img/raspberry-bg.jpg');
+}
+.promo__item--chocolate {
+  background-image: url('../img/chocolate-bg.jpg');
+}
+.promo__title {
+  margin-top: 0;
+  margin-bottom: 14px;
+  font-size: 35px;
+  line-height: 41px;
+  text-align: left;
+}
+.promo__text {
+  margin-bottom: 42px;
+  font-size: 18px;
+  text-align: left;
 }
 /* MODALS */
 .modal__overlay {
