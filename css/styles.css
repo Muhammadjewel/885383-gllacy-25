@@ -149,11 +149,12 @@ a:focus {
   SITE-HEADER
   ============== */
 .site-header {
+  position: relative;
   padding-top: 9px;
 }
 .site-navigation {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 .logo {
   border-bottom: 0;
@@ -165,8 +166,11 @@ a:focus {
 /* Main navigation */
 .main-navigation {
   display: flex;
+  flex-wrap: wrap;
+  width: 400px;
   padding: 0;
   margin: 0;
+  margin-top: 14px;
   margin-right: auto;
   list-style-type: none;
 }
@@ -289,6 +293,7 @@ a:focus {
   display: flex;
   padding: 0;
   margin: 0;
+  margin-top: 13px;
   list-style-type: none;
   font-size: 14px;
 }
@@ -441,6 +446,9 @@ a:focus {
 }
 /* Site-header contacts */
 .site-header__contacts {
+  position: absolute;
+  top: 74px;
+  right: 0;
   text-align: right;
   color: #fff;
   font-weight: bold;
@@ -461,7 +469,7 @@ a:focus {
 /* SLIDER */
 .slider {
   position: relative;
-  padding-top: 274px;
+  padding-top: 319px;
   margin-bottom: 41px;
   text-align: center;
   color: #fff;
@@ -520,6 +528,7 @@ a:focus {
   background-color: #323232;
   background-repeat: no-repeat;
   background-position: center center;
+  background-size: cover;
   color: #fff;
   text-align: right;
 }
@@ -537,7 +546,8 @@ a:focus {
   text-align: left;
 }
 .promo__text {
-  margin-bottom: 42px;
+  margin-top: 0;
+  margin-bottom: 45px;
   font-size: 18px;
   text-align: left;
 }
