@@ -113,5 +113,31 @@
         </header><!-- /.site-header -->
       </div><!-- /.container -->
     </div><!-- /.site-wrapper -->
+
+    <!-- MODALS -->
+    <div class="modal__overlay">
+      <section class="modal modal--contact">
+        <button class="close-button" type="button"><span class="visually-hidden">Закрыть форму</span></button>
+        <h2 class="visually-hidden">Форма обратной связи</h2>
+        <p class="modal__title">Мы обязательно вам ответим!</p>
+        <form action="https://echo.htmlacademy.ru" method="POST" class="modal__form">
+          <p class="input-group">
+            <label for="name-input" class="visually-hidden">Имя</label>
+            <input type="text" id="name-input" name="name" placeholder="Как вас зовут?" required>
+          </p><!-- /.input-group -->
+          <p class="input-group">
+            <label for="contact-email-input" class="visually-hidden">Электронная почта</label>
+            <input type="email" id="contact-email-input"  name="email" placeholder="Ваша почта для ответа?" required>
+          </p><!-- /.input-group -->
+          <p class="input-group">
+            <label for="contact-body-input" class="visually-hidden">Текст письма</label>
+            <textarea name="body" id="contact-body-input" placeholder="Напишите что-нибудь..." required></textarea>            
+          </p><!-- /.input-group -->
+          <p class="submit-area">
+            <button type="submit" class="button">Отправить</button>
+          </p><!-- /.submit-area -->
+        </form><!-- /.modal__form -->
+      </section><!-- /.modal modal--contact -->
+    </div><!-- /.modal__background -->
   </body>
 </html>
