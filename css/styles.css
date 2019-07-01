@@ -678,6 +678,77 @@ img {
 .feature__item--delivery {
   background-image: url('../img/thermometer.svg');
 }
+/* BLOG AND SUBSCRIPTION */
+.blog-subscription {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 39px;
+}
+.blog-subscription > section {
+  width: 560px;
+  border-radius: 15px;
+}
+.blog {
+  padding: 24px 19px;
+  background: #fff url('../img/article-bg.jpg') no-repeat center center / contain;
+}
+.blog h2 {
+  margin-top: 0;
+  margin-bottom: 3px;
+  font-size: 16px;
+}
+.blog h3 {
+  width: 290px;
+  margin-top: 0;
+}
+.blog a {
+  position: relative;
+  border-bottom: 1px solid #323232;
+  font-size: 24px;
+  line-height: 30px;
+  color: #323232;
+}
+.blog a:hover,
+.blog a:focus {
+  color: #e84d37;
+  border-bottom-color: rgba(232, 77, 55, 0.3);
+}
+.subscription {
+  position: relative;
+  padding: 5px;
+  background: url('../img/subscription-bg.png') center center;
+}
+.subscription-overlay {
+  padding: 30px 22px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.subscription p {
+  margin-top: 0;
+  margin-bottom: 35px;
+  font-size: 16px;
+  color: #5a5a5a;
+}
+.subscription input {
+  width: 368px;
+  padding: 13px 15px;
+  border: 1px solid rgba(178, 178, 178, 0.52);
+  border-radius: 5px;
+  margin-right: 11px;
+}
+.subscription input:hover {
+  border-color: #9a9a9a;  
+  box-shadow: inset 0 0 0 1px #9a9a9a;
+}
+.subscription input:focus {
+  outline: 0;
+  border-color: rgba(46, 136, 228, 0.52);
+  box-shadow: inset 0 0 0 1px rgba(46, 136, 228, 0.52);
+}
+.subscription .button {
+  padding: 10px 15px;
+}
 /* MODALS */
 .modal__overlay {
   position: fixed;
