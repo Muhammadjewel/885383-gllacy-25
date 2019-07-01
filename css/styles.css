@@ -34,7 +34,7 @@ body {
   font-family: 'Roboto', 'Arial', sans-serif;
   font-size: 16px;
   line-height: 22px;
-  color: #5a5a5a;
+  color: #323232;
 }
 a {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
@@ -275,7 +275,6 @@ img {
 .submenu__link:hover,
 .submenu__link:focus {
   background-color: #fbded7;
-  color: #323232;
   outline: 0;
 }
 .submenu__link:active {
@@ -560,9 +559,6 @@ img {
   text-align: left;
 }
 /* PRODUCTS */
-.products {
-  margin-bottom: 38px;
-}
 .product__list {
   display: flex;
   padding: 0;
@@ -585,10 +581,11 @@ img {
   top: -6px;
   left: -13px;
   right: -13px;
-  bottom: -75px;
+  bottom: 0;
   background-color: transparent;
 }
 .product__item:hover::before {
+  bottom: -75px;
   padding-bottom: 75px;
   border-radius: 5px;
   background-color: rgba(248, 247, 244, 0.2);
@@ -640,6 +637,47 @@ img {
 .product__item:hover .product__button {
   display: block;
 }
+/* FEATURES */
+.features {
+  padding: 26px 20px 11px;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  background: #efe2ca url('../img/waffle-bg.jpg') top left / cover;
+}
+.features__lead {
+  margin-top: 0;
+  margin-bottom: 7px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+}
+.feature__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.feature__item {
+  width: 538px;
+  padding-top: 13px;
+  padding-left: 57px;
+  margin-bottom: 11px;
+  background: no-repeat top left / 49px 49px;
+}
+.feature__item--technology {
+  background-image: url('../img/ice-cream.svg');
+}
+.feature__item--ingredients {
+  background-image: url('../img/cow.svg');
+}
+.feature__item--quality {
+  background-image: url('../img/eco.svg');
+}
+.feature__item--delivery {
+  background-image: url('../img/thermometer.svg');
+}
 /* MODALS */
 .modal__overlay {
   position: fixed;
@@ -681,7 +719,6 @@ img {
   font-size: 24px;
   line-height: 28px;
   font-weight: bold;
-  color: #323232;
 }
 .modal__form .input-group {
   margin-bottom: 20px;
